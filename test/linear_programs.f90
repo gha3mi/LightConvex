@@ -3,7 +3,6 @@ module TestLinearPrograms
    use testdrive, only: new_unittest, unittest_type, error_type, check
    use stdlib_math, only: is_close, all_close
    use stdlib_linalg_constants, only: ilp, dp, lk
-   use stdlib_math, only: all_close
    use LightConvex, only: dense_lp_type, linear_program, lp_solution, &
                           Dantzig, auxiliary_function, &
                           PrimalSimplex, solve, &
