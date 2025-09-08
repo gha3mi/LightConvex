@@ -4,6 +4,7 @@ program check
    ! Unit-test utilities.
    use testdrive, only: run_testsuite, new_testsuite, testsuite_type
    ! Collection of test problems.
+   use TestLinalg, only: collect_linalg_tests
    use TestLinearPrograms, only: collect_dense_standard_simplex_problems
    implicit none(external)
 
@@ -14,7 +15,8 @@ program check
 
    ! Collection of test suites.
    status = 0
-   testsuites = [new_testsuite("Dense Standard Simplex", collect_dense_standard_simplex_problems)]
+   testsuites = [new_testsuite("Linear Algebra", collect_linalg_tests)]
+   testsuites = [testsuites, new_testsuite("Dense Standard Simplex", collect_dense_standard_simplex_problems)]
 
    ! Run all the test suites.
    do i = 1, size(testsuites)
