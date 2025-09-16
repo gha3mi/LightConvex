@@ -20,13 +20,38 @@ jobs:
           - os: ubuntu-latest
             compiler: gfortran
             compiler-version: 13.3.0
-            flag-debug: "-Wno-external-argument-mismatch -coverage"
+            fpm-options: "--profile debug --flag '-Wno-external-argument-mismatch -coverage'"
             extra-packages: "lcov"
           - os: ubuntu-latest
             compiler: ifx
             compiler-version: 2025.2.1
+            fpm-options: "--profile debug"
             extra-packages: ""
-
+          - os: ubuntu-latest
+            compiler: nvfortran
+            compiler-version: ""
+            fpm-options: "--profile debug"
+          - os: ubuntu-latest
+            compiler: flang-new
+            compiler-version: ""
+            fpm-options: "--profile debug --flag '-cpp'"
+          - os: macos-latest
+            compiler: gfortran
+            compiler-version: 13.3.0
+            fpm-options: "--profile debug --flag '-Wno-external-argument-mismatch'"
+          - os: windows-latest
+            compiler: gfortran
+            compiler-version: 13.3.0
+            fpm-options: "--profile debug --flag '-Wno-external-argument-mismatch -Wno-maybe-uninitialized -Wno-unused-parameter -Wno-unused-variable -Wno-unused-dummy-argument -Wno-compare-reals'"
+          - os: windows-latest
+            compiler: ifx
+            compiler-version: 2025.2.1
+            fpm-options: "--profile debug"
+          - os: windows-latest
+            compiler: flang-new
+            compiler-version: ""
+            fpm-options: "--flag '-cpp'"
+  
     steps:
       - name: Setup Fortran
         uses: gha3mi/setup-fortran-conda@latest
@@ -38,8 +63,8 @@ jobs:
 
       - name: fpm test (debug)
         run: |
-          fpm build --compiler ${{ matrix.compiler }} --profile debug --flag "${{ matrix.flag-debug }}" --verbose --show-model
-          fpm test --compiler ${{ matrix.compiler }} --profile debug --flag "${{ matrix.flag-debug }}" --verbose
+          fpm build --compiler ${{ matrix.compiler }} ${{ matrix.fpm-options }} --verbose --show-model
+          fpm test --compiler ${{ matrix.compiler }} ${{ matrix.fpm-options }} --verbose
 
       - name: Create coverage report
         if: contains( matrix.os, 'ubuntu') && contains( matrix.compiler, 'gfortran')
