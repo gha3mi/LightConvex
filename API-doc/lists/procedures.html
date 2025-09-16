@@ -1,0 +1,498 @@
+<!-- -*- mode: jinja2 -*- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Convex Programming in Modern Fortran">
+    <meta name="author" content="" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>All Procedures &ndash; LightConvex
+</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
+    <link href="../css/local.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <script src="../js/svg-pan-zoom.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">LightConvex </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../page/index.html">Contributing and specs</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12" id='text'>
+			 <h1>Procedures</h1>
+			 <table class="table table-striped">
+			 <thead><tr><th>Procedure</th><th>Location</th><th>Procedure Type</th><th>Description</th></tr></thead>
+			 <tbody>
+			   <tr>
+                 <td><a href='../interface/factmv.html'>factmv</a></td>
+                 <td><a href='../module/lightconvex_linalg.html'>lightconvex_linalg</a></td>
+                 <td>Interface</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../interface/is_feasible.html'>is_feasible</a></td>
+                 <td><a href='../module/lightconvex_abstract.html'>lightconvex_abstract</a></td>
+                 <td>Interface</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../interface/is_optimal.html'>is_optimal</a></td>
+                 <td><a href='../module/lightconvex_abstract.html'>lightconvex_abstract</a></td>
+                 <td>Interface</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../interface/is_unbounded.html'>is_unbounded</a></td>
+                 <td><a href='../module/lightconvex_abstract.html'>lightconvex_abstract</a></td>
+                 <td>Interface</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../interface/linear_program.html'>linear_program</a></td>
+                 <td><a href='../module/lightconvex_lp.html'>lightconvex_lp</a></td>
+                 <td>Interface</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../interface/primalsimplex.html'>PrimalSimplex</a></td>
+                 <td><a href='../module/lightconvex_lp.html'>lightconvex_lp</a></td>
+                 <td>Interface</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../interface/qr.html'>QR</a></td>
+                 <td><a href='../module/lightconvex_linalg.html'>lightconvex_linalg</a></td>
+                 <td>Interface</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../interface/simplex.html'>simplex</a></td>
+                 <td><a href='../module/lightconvex_lp.html'>lightconvex_lp</a></td>
+                 <td>Interface</td>
+                 <td></td>
+               </tr>
+			   <tr>
+                 <td><a href='../interface/solve.html'>solve</a></td>
+                 <td><a href='../module/lightconvex_lp.html'>lightconvex_lp</a></td>
+                 <td>Interface</td>
+                 <td></td>
+               </tr>
+			 </tbody></table>
+             <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 13.1.2 (20250809.0930)
+ -->
+<!-- Title: call~~graph~~CallGraph Pages: 1 -->
+<svg id="callgraphCallGraph" width="213pt" height="725pt"
+ viewBox="0.00 0.00 213.00 725.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="call~~graph~~CallGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 721.27)">
+<title>call~~graph~~CallGraph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-721.27 209.02,-721.27 209.02,4 -4,4"/>
+<!-- interface~factmv -->
+<g id="call~~graph~~CallGraph_node1" class="node">
+<title>interface~factmv</title>
+<g id="a_call~~graph~~CallGraph_node1"><a xlink:href="../interface/factmv.html" xlink:title="factmv">
+<polygon fill="#a7506f" stroke="#a7506f" points="84.51,-24.27 30.51,-24.27 30.51,0 84.51,0 84.51,-24.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-8.54" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">factmv</text>
+</a>
+</g>
+</g>
+<!-- interface~is_feasible -->
+<g id="call~~graph~~CallGraph_node2" class="node">
+<title>interface~is_feasible</title>
+<g id="a_call~~graph~~CallGraph_node2"><a xlink:href="../interface/is_feasible.html" xlink:title="is_feasible">
+<polygon fill="#a7506f" stroke="#a7506f" points="91.02,-66.27 24,-66.27 24,-42 91.02,-42 91.02,-66.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-50.54" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">is_feasible</text>
+</a>
+</g>
+</g>
+<!-- interface~is_optimal -->
+<g id="call~~graph~~CallGraph_node3" class="node">
+<title>interface~is_optimal</title>
+<g id="a_call~~graph~~CallGraph_node3"><a xlink:href="../interface/is_optimal.html" xlink:title="is_optimal">
+<polygon fill="#a7506f" stroke="#a7506f" points="90.27,-108.27 24.75,-108.27 24.75,-84 90.27,-84 90.27,-108.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-92.54" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">is_optimal</text>
+</a>
+</g>
+</g>
+<!-- interface~is_unbounded -->
+<g id="call~~graph~~CallGraph_node4" class="node">
+<title>interface~is_unbounded</title>
+<g id="a_call~~graph~~CallGraph_node4"><a xlink:href="../interface/is_unbounded.html" xlink:title="is_unbounded">
+<polygon fill="#a7506f" stroke="#a7506f" points="100.39,-150.27 14.62,-150.27 14.62,-126 100.39,-126 100.39,-150.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-134.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">is_unbounded</text>
+</a>
+</g>
+</g>
+<!-- interface~linear_program -->
+<g id="call~~graph~~CallGraph_node5" class="node">
+<title>interface~linear_program</title>
+<g id="a_call~~graph~~CallGraph_node5"><a xlink:href="../interface/linear_program.html" xlink:title="linear_program">
+<polygon fill="#a7506f" stroke="#a7506f" points="104.14,-192.27 10.87,-192.27 10.87,-168 104.14,-168 104.14,-192.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-176.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">linear_program</text>
+</a>
+</g>
+</g>
+<!-- interface~primalsimplex -->
+<g id="call~~graph~~CallGraph_node6" class="node">
+<title>interface~primalsimplex</title>
+<g id="a_call~~graph~~CallGraph_node6"><a xlink:href="../interface/primalsimplex.html" xlink:title="PrimalSimplex">
+<polygon fill="#a7506f" stroke="#a7506f" points="101.14,-234.27 13.87,-234.27 13.87,-210 101.14,-210 101.14,-234.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-218.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">PrimalSimplex</text>
+</a>
+</g>
+</g>
+<!-- interface~qr -->
+<g id="call~~graph~~CallGraph_node7" class="node">
+<title>interface~qr</title>
+<g id="a_call~~graph~~CallGraph_node7"><a xlink:href="../interface/qr.html" xlink:title="QR">
+<polygon fill="#a7506f" stroke="#a7506f" points="84.51,-276.27 30.51,-276.27 30.51,-252 84.51,-252 84.51,-276.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-260.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">QR</text>
+</a>
+</g>
+</g>
+<!-- interface~simplex -->
+<g id="call~~graph~~CallGraph_node8" class="node">
+<title>interface~simplex</title>
+<g id="a_call~~graph~~CallGraph_node8"><a xlink:href="../interface/simplex.html" xlink:title="simplex">
+<polygon fill="#a7506f" stroke="#a7506f" points="84.51,-318.27 30.51,-318.27 30.51,-294 84.51,-294 84.51,-318.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-302.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">simplex</text>
+</a>
+</g>
+</g>
+<!-- interface~solve -->
+<g id="call~~graph~~CallGraph_node9" class="node">
+<title>interface~solve</title>
+<g id="a_call~~graph~~CallGraph_node9"><a xlink:href="../interface/solve.html" xlink:title="solve">
+<polygon fill="#a7506f" stroke="#a7506f" points="84.51,-360.27 30.51,-360.27 30.51,-336 84.51,-336 84.51,-360.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-344.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">solve</text>
+</a>
+</g>
+</g>
+<!-- proc~assemble_dense_lp -->
+<g id="call~~graph~~CallGraph_node10" class="node">
+<title>proc~assemble_dense_lp</title>
+<g id="a_call~~graph~~CallGraph_node10"><a xlink:href="../proc/assemble_dense_lp.html" xlink:title="assemble_dense_lp">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="115.02,-507.27 0,-507.27 0,-483 115.02,-483 115.02,-507.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-491.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">assemble_dense_lp</text>
+</a>
+</g>
+</g>
+<!-- assert -->
+<g id="call~~graph~~CallGraph_node17" class="node">
+<title>assert</title>
+<polygon fill="#777777" stroke="#777777" points="205.02,-507.27 151.02,-507.27 151.02,-483 205.02,-483 205.02,-507.27"/>
+<text xml:space="preserve" text-anchor="middle" x="178.02" y="-491.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">assert</text>
+</g>
+<!-- proc~assemble_dense_lp&#45;&gt;assert -->
+<g id="call~~graph~~CallGraph_edge1" class="edge">
+<title>proc~assemble_dense_lp&#45;&gt;assert</title>
+<path fill="none" stroke="#009fff" d="M115.34,-495.13C123.44,-495.13 131.61,-495.13 139.23,-495.13"/>
+<polygon fill="#009fff" stroke="#009fff" points="139.16,-498.64 149.16,-495.14 139.16,-491.64 139.16,-498.64"/>
+</g>
+<!-- proc~is_feasible -->
+<g id="call~~graph~~CallGraph_node11" class="node">
+<title>proc~is_feasible</title>
+<g id="a_call~~graph~~CallGraph_node11"><a xlink:href="../proc/is_feasible.html" xlink:title="is_feasible">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="91.02,-591.27 24,-591.27 24,-567 91.02,-567 91.02,-591.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-575.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">is_feasible</text>
+</a>
+</g>
+</g>
+<!-- proc~is_optimal -->
+<g id="call~~graph~~CallGraph_node12" class="node">
+<title>proc~is_optimal</title>
+<g id="a_call~~graph~~CallGraph_node12"><a xlink:href="../proc/is_optimal.html" xlink:title="is_optimal">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="90.27,-633.27 24.75,-633.27 24.75,-609 90.27,-609 90.27,-633.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-617.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">is_optimal</text>
+</a>
+</g>
+</g>
+<!-- proc~is_unbounded -->
+<g id="call~~graph~~CallGraph_node13" class="node">
+<title>proc~is_unbounded</title>
+<g id="a_call~~graph~~CallGraph_node13"><a xlink:href="../proc/is_unbounded.html" xlink:title="is_unbounded">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="100.39,-675.27 14.62,-675.27 14.62,-651 100.39,-651 100.39,-675.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-659.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">is_unbounded</text>
+</a>
+</g>
+</g>
+<!-- proc~qr_fact -->
+<g id="call~~graph~~CallGraph_node14" class="node">
+<title>proc~qr_fact</title>
+<g id="a_call~~graph~~CallGraph_node14"><a xlink:href="../proc/qr_fact.html" xlink:title="qr_fact">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="84.51,-549.27 30.51,-549.27 30.51,-525 84.51,-525 84.51,-549.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-533.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">qr_fact</text>
+</a>
+</g>
+</g>
+<!-- proc~qr_fact&#45;&gt;assert -->
+<g id="call~~graph~~CallGraph_edge2" class="edge">
+<title>proc~qr_fact&#45;&gt;assert</title>
+<path fill="none" stroke="#df00ff" d="M84.81,-527.81C101.07,-522.05 122.19,-514.57 140.12,-508.21"/>
+<polygon fill="#df00ff" stroke="#df00ff" points="141.11,-511.58 149.37,-504.94 138.77,-504.98 141.11,-511.58"/>
+</g>
+<!-- geqr -->
+<g id="call~~graph~~CallGraph_node19" class="node">
+<title>geqr</title>
+<polygon fill="#777777" stroke="#777777" points="205.02,-549.27 151.02,-549.27 151.02,-525 205.02,-525 205.02,-549.27"/>
+<text xml:space="preserve" text-anchor="middle" x="178.02" y="-533.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">geqr</text>
+</g>
+<!-- proc~qr_fact&#45;&gt;geqr -->
+<g id="call~~graph~~CallGraph_edge3" class="edge">
+<title>proc~qr_fact&#45;&gt;geqr</title>
+<path fill="none" stroke="#df00ff" d="M84.81,-537.13C100.84,-537.13 121.6,-537.13 139.36,-537.13"/>
+<polygon fill="#df00ff" stroke="#df00ff" points="139.28,-540.64 149.28,-537.14 139.28,-533.64 139.28,-540.64"/>
+</g>
+<!-- proc~qrmv -->
+<g id="call~~graph~~CallGraph_node15" class="node">
+<title>proc~qrmv</title>
+<g id="a_call~~graph~~CallGraph_node15"><a xlink:href="../proc/qrmv.html" xlink:title="qrmv">
+<polygon fill="#d9534f" stroke="#d9534f" points="84.51,-402.27 30.51,-402.27 30.51,-378 84.51,-378 84.51,-402.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-386.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">qrmv</text>
+</a>
+</g>
+</g>
+<!-- proc~qrmv&#45;&gt;assert -->
+<g id="call~~graph~~CallGraph_edge4" class="edge">
+<title>proc~qrmv&#45;&gt;assert</title>
+<path fill="none" stroke="#ff00bf" d="M71.77,-402.62C89.54,-419.25 122.19,-449.44 151.02,-474.13 151.53,-474.57 152.05,-475.01 152.57,-475.45"/>
+<polygon fill="#ff00bf" stroke="#ff00bf" points="150.12,-477.97 160.06,-481.66 154.59,-472.58 150.12,-477.97"/>
+</g>
+<!-- gemqr -->
+<g id="call~~graph~~CallGraph_node18" class="node">
+<title>gemqr</title>
+<polygon fill="#777777" stroke="#777777" points="205.02,-381.27 151.02,-381.27 151.02,-357 205.02,-357 205.02,-381.27"/>
+<text xml:space="preserve" text-anchor="middle" x="178.02" y="-365.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">gemqr</text>
+</g>
+<!-- proc~qrmv&#45;&gt;gemqr -->
+<g id="call~~graph~~CallGraph_edge5" class="edge">
+<title>proc~qrmv&#45;&gt;gemqr</title>
+<path fill="none" stroke="#ff00bf" d="M84.81,-385.47C100.92,-382.62 121.8,-378.92 139.61,-375.76"/>
+<polygon fill="#ff00bf" stroke="#ff00bf" points="140.07,-379.24 149.3,-374.05 138.84,-372.35 140.07,-379.24"/>
+</g>
+<!-- optval -->
+<g id="call~~graph~~CallGraph_node20" class="node">
+<title>optval</title>
+<polygon fill="#777777" stroke="#777777" points="205.02,-339.27 151.02,-339.27 151.02,-315 205.02,-315 205.02,-339.27"/>
+<text xml:space="preserve" text-anchor="middle" x="178.02" y="-323.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">optval</text>
+</g>
+<!-- proc~qrmv&#45;&gt;optval -->
+<g id="call~~graph~~CallGraph_edge6" class="edge">
+<title>proc~qrmv&#45;&gt;optval</title>
+<path fill="none" stroke="#ff00bf" d="M84.95,-381.79C94.63,-378.35 105.53,-374.02 115.02,-369.13 127.59,-362.66 140.66,-354.11 151.55,-346.42"/>
+<polygon fill="#ff00bf" stroke="#ff00bf" points="153.58,-349.27 159.62,-340.56 149.47,-343.6 153.58,-349.27"/>
+</g>
+<!-- trmv -->
+<g id="call~~graph~~CallGraph_node21" class="node">
+<title>trmv</title>
+<polygon fill="#777777" stroke="#777777" points="205.02,-297.27 151.02,-297.27 151.02,-273 205.02,-273 205.02,-297.27"/>
+<text xml:space="preserve" text-anchor="middle" x="178.02" y="-281.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">trmv</text>
+</g>
+<!-- proc~qrmv&#45;&gt;trmv -->
+<g id="call~~graph~~CallGraph_edge7" class="edge">
+<title>proc~qrmv&#45;&gt;trmv</title>
+<path fill="none" stroke="#ff00bf" d="M84.98,-384.44C95.21,-381.24 106.48,-376.38 115.02,-369.13 139.61,-348.27 130.12,-330.69 151.02,-306.13 151.18,-305.95 151.34,-305.76 151.51,-305.57"/>
+<polygon fill="#ff00bf" stroke="#ff00bf" points="153.87,-308.15 158.6,-298.67 148.99,-303.13 153.87,-308.15"/>
+</g>
+<!-- x_tmp -->
+<g id="call~~graph~~CallGraph_node22" class="node">
+<title>x_tmp</title>
+<polygon fill="#777777" stroke="#777777" points="205.02,-465.27 151.02,-465.27 151.02,-441 205.02,-441 205.02,-465.27"/>
+<text xml:space="preserve" text-anchor="middle" x="178.02" y="-449.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">x_tmp</text>
+</g>
+<!-- proc~qrmv&#45;&gt;x_tmp -->
+<g id="call~~graph~~CallGraph_edge8" class="edge">
+<title>proc~qrmv&#45;&gt;x_tmp</title>
+<path fill="none" stroke="#ff00bf" d="M82.21,-402.73C99.73,-412.05 123.83,-424.86 143.35,-435.24"/>
+<polygon fill="#ff00bf" stroke="#ff00bf" points="141.55,-438.25 152.03,-439.85 144.84,-432.06 141.55,-438.25"/>
+</g>
+<!-- xmat -->
+<g id="call~~graph~~CallGraph_node23" class="node">
+<title>xmat</title>
+<polygon fill="#777777" stroke="#777777" points="205.02,-423.27 151.02,-423.27 151.02,-399 205.02,-399 205.02,-423.27"/>
+<text xml:space="preserve" text-anchor="middle" x="178.02" y="-407.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xmat</text>
+</g>
+<!-- proc~qrmv&#45;&gt;xmat -->
+<g id="call~~graph~~CallGraph_edge9" class="edge">
+<title>proc~qrmv&#45;&gt;xmat</title>
+<path fill="none" stroke="#ff00bf" d="M84.81,-394.8C100.92,-397.65 121.8,-401.35 139.61,-404.51"/>
+<polygon fill="#ff00bf" stroke="#ff00bf" points="138.84,-407.92 149.3,-406.22 140.07,-401.03 138.84,-407.92"/>
+</g>
+<!-- proc~set_status -->
+<g id="call~~graph~~CallGraph_node16" class="node">
+<title>proc~set_status</title>
+<g id="a_call~~graph~~CallGraph_node16"><a xlink:href="../proc/set_status.html" xlink:title="set_status">
+<polygon fill="#d9534f" stroke="#d9534f" points="89.52,-717.27 25.5,-717.27 25.5,-693 89.52,-693 89.52,-717.27"/>
+<text xml:space="preserve" text-anchor="middle" x="57.51" y="-701.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">set_status</text>
+</a>
+</g>
+</g>
+</g>
+</svg>
+</div>          <div>
+            <a type="button" class="graph-help" data-bs-toggle="modal" href="#CallGraph-help-text">Help</a>
+          </div>
+          <div class="modal fade" id="CallGraph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 13.1.2 (20250809.0930)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="641pt" height="28pt"
+ viewBox="0.00 0.00 641.00 28.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(0.873868 0.873868) rotate(0) translate(4 28.27)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-28.27 729.52,-28.27 729.52,4 -4,4"/>
+<!-- Subroutine -->
+<g id="node1" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="69.27,-24.27 0,-24.27 0,0 69.27,0 69.27,-24.27"/>
+<text xml:space="preserve" text-anchor="middle" x="34.63" y="-8.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node2" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="143.89,-24.27 87.38,-24.27 87.38,0 143.89,0 143.89,-24.27"/>
+<text xml:space="preserve" text-anchor="middle" x="115.63" y="-8.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Interface -->
+<g id="node3" class="node">
+<title>Interface</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="221.39,-24.27 161.88,-24.27 161.88,0 221.39,0 221.39,-24.27"/>
+<text xml:space="preserve" text-anchor="middle" x="191.63" y="-8.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
+</g>
+<!-- Type Bound Procedure -->
+<g id="node4" class="node">
+<title>Type Bound Procedure</title>
+<polygon fill="#a7506f" stroke="#a7506f" points="368.27,-24.27 239,-24.27 239,0 368.27,0 368.27,-24.27"/>
+<text xml:space="preserve" text-anchor="middle" x="303.63" y="-8.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type Bound Procedure</text>
+</g>
+<!-- Unknown Procedure Type -->
+<g id="node5" class="node">
+<title>Unknown Procedure Type</title>
+<polygon fill="#777777" stroke="#777777" points="529.39,-24.27 385.88,-24.27 385.88,0 529.39,0 529.39,-24.27"/>
+<text xml:space="preserve" text-anchor="middle" x="457.63" y="-8.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
+</g>
+<!-- Program -->
+<g id="node6" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="603.89,-24.27 547.38,-24.27 547.38,0 603.89,0 603.89,-24.27"/>
+<text xml:space="preserve" text-anchor="middle" x="575.63" y="-8.53" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node7" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="725.52,-24.27 621.75,-24.27 621.75,0 725.52,0 725.52,-24.27"/>
+<text xml:space="preserve" text-anchor="middle" x="673.63" y="-8.53" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a procedure to one which it calls. Dashed 
+arrows point from an interface to procedures which implement that interface.
+This could include the module procedures in a generic interface or the
+implementation in a submodule of an interface in a parent module.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p>
+              LightConvex
+              &copy; 2025 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2025-09-16 12:57 +0000             </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+  </body>
+</html>
